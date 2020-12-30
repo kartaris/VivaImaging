@@ -241,6 +241,8 @@ public:
 */
   virtual void PostMessageToMain(int msg, WPARAM wParam, LPARAM lParam);
 
+  virtual BOOL SaveUpdateExtAttribute(LPCWSTR pathName, KEcmDocTypeInfo& docTypeInfo, KMetadataInfo* p);
+
   int mEngineReady;
 
 #if defined(USE_SCAN_BY_HTTP_REQUEST)

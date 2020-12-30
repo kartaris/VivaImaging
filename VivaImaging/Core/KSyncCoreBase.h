@@ -932,6 +932,7 @@ public:
 
   virtual BOOL IsOnModal() { return FALSE; }
 
+  virtual BOOL SaveUpdateExtAttribute(LPCWSTR pathName, KEcmDocTypeInfo& docTypeInfo, KMetadataInfo* p) { return FALSE; }
 
 
   /**

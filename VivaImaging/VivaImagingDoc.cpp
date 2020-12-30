@@ -1067,6 +1067,7 @@ BOOL CVivaImagingDoc::OnSaveDocument(LPCTSTR lpszPathName)
 #endif
       delete[] firstFileName;
     }
+
     mIsTempFolder = FALSE;
     mIsNewDocument = FALSE;
     m_Pages.ClearTempFiles(mWorkingPath);
@@ -2060,7 +2061,11 @@ BOOL CVivaImagingDoc::OnSaveAsTiff(LPCTSTR lpszPathName, CString& errmsg)
     m_Pages.GetPageList(imagePages, IMAGE_ONLY);
     if (imagePages.size() > 0)
     {
-      return SaveImageAsTiff(lpszPathName, imagePages, errmsg);
+      if (SaveImageAsTiff(lpszPathName, imagePages, errmsg))
+      {
+        // ECM 드라이브에 저장되면 확장 속성 업데이트
+        gpCoreEngine->SaveUpdateExtAttribute(lpszPathName, mDocTypeInfo, &((KImagePage*)p)->GeDocExtAttributes());
+      }
     }
   }
   return FALSE;

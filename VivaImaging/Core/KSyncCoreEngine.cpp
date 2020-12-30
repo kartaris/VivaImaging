@@ -1415,3 +1415,15 @@ void KSyncCoreEngine::PostMessageToMain(int msg, WPARAM wParam, LPARAM lParam)
   if (wnd != NULL)
     wnd->PostMessage(msg, wParam, lParam);
 }
+
+BOOL KSyncCoreEngine::SaveUpdateExtAttribute(LPCWSTR pathName, KEcmDocTypeInfo& docTypeInfo, KMetadataInfo* p)
+{
+  if ((pathName[1] == ':') && (pathName[0] == mEcmDrive))
+  {
+
+    CreateDocumentWithExtAttr(FALSE, ERROR_ST * err, LPCWSTR szFolderOID, LPCWSTR szFileName, LONGLONG fileSize, LPCWSTR serverFileOID, LPCWSTR szStorageFileID,
+      LONGLONG localLastModifiedAt, LONGLONG localCreatedAt, LPCWSTR folderIndex, KEcmDocTypeInfo * pInfo, KMetadataInfo * pMetadata, OUT XSYNCDOCUMENT_ST * *ppXDoc);
+  }
+  return FALSE;
+}
+
