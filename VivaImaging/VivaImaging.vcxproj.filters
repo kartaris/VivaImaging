@@ -1,0 +1,1003 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\Core">
+      <UniqueIdentifier>{2f565eca-2ee8-470f-9935-25cf4615cf57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Control">
+      <UniqueIdentifier>{a00cc043-172c-4b23-b143-3954df87f59b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Document">
+      <UniqueIdentifier>{544197c1-8b84-46d2-88f9-52ea586ea1ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Platform">
+      <UniqueIdentifier>{d83a5f96-4da4-47f7-8b17-726d3171f832}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Platform">
+      <UniqueIdentifier>{1b2d9371-9ab2-49b4-9f30-1dd12bd4095b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Core">
+      <UniqueIdentifier>{92d6fb05-1872-4f02-935b-430a052c7f98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Control">
+      <UniqueIdentifier>{837e3aa5-bbba-4f9d-b090-e8d06cca18ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Document">
+      <UniqueIdentifier>{9284ddf2-c5cb-4b62-93bf-8c0eb011cdaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Platform\twain">
+      <UniqueIdentifier>{a0f19e78-5a56-4822-9fbd-be8c5633ee7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Platform\twain">
+      <UniqueIdentifier>{222e0e8d-5a4d-4a6f-9c80-69deb9a15e91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Platform\wia">
+      <UniqueIdentifier>{016d577b-17a1-4002-8466-73cd718a7412}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Platform\wia">
+      <UniqueIdentifier>{bfdeb466-371d-49f9-8054-287438a144c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\PropertyCtrl">
+      <UniqueIdentifier>{73712e7e-e862-455b-8baa-e8a60bb1e240}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\PropertyCtrl">
+      <UniqueIdentifier>{b06b632a-945f-4e36-a711-2b51ce01f8b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Document\Shape">
+      <UniqueIdentifier>{4d3a131d-8f2b-4833-8967-fb0e6e9fb47d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Document\Shape">
+      <UniqueIdentifier>{d1f7e907-b575-4e75-8f4b-93f137dfbada}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Core\DestinyIF">
+      <UniqueIdentifier>{852887eb-4021-48b6-8b20-5b679d8fc51d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Core\HttpDownloader">
+      <UniqueIdentifier>{05373d03-0066-438c-9633-0223ae935e86}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VivaImaging.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VivaImagingDoc.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VivaImagingView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FileView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewTree.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputWnd.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertiesWnd.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="KDlgNewProject.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\stdafx.h">
+      <Filter>헤더 파일\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\Platform.h">
+      <Filter>헤더 파일\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\KBitmap.h">
+      <Filter>헤더 파일\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\Graphics.h">
+      <Filter>헤더 파일\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\stdafx.h">
+      <Filter>헤더 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\stdafx.h">
+      <Filter>헤더 파일\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Document\KImagePage.h">
+      <Filter>헤더 파일\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="Document\stdafx.h">
+      <Filter>헤더 파일\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="KDlgSelectImageSource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\twain\twain.h">
+      <Filter>헤더 파일\Platform\twain</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\twain\DSMInterface.h">
+      <Filter>헤더 파일\Platform\twain</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\twain\TwainApp.h">
+      <Filter>헤더 파일\Platform\twain</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\twain\KTwainControl.h">
+      <Filter>헤더 파일\Platform\twain</Filter>
+    </ClInclude>
+    <ClInclude Include="KDlgConfigureSource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\KConfigureSourceCtrl.h">
+      <Filter>헤더 파일\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\KThumbListView.h">
+      <Filter>헤더 파일\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\KConstant.h">
+      <Filter>헤더 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\KSettings.h">
+      <Filter>헤더 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\twain\TwainString.h">
+      <Filter>헤더 파일\Platform\twain</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\Utils.h">
+      <Filter>헤더 파일\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\twain\stdafx.h">
+      <Filter>헤더 파일\Platform\twain</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\twain\CommonTWAIN.h">
+      <Filter>헤더 파일\Platform\twain</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\twain\CTiffWriter.h">
+      <Filter>헤더 파일\Platform\twain</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\wia\KWiaControl.h">
+      <Filter>헤더 파일\Platform\wia</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\wia\stdafx.h">
+      <Filter>헤더 파일\Platform\wia</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\wia\KWiaTransferCallback.h">
+      <Filter>헤더 파일\Platform\wia</Filter>
+    </ClInclude>
+    <ClInclude Include="Document\KImageFolder.h">
+      <Filter>헤더 파일\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="Document\KImageBase.h">
+      <Filter>헤더 파일\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\KPropertyGridProperty.h">
+      <Filter>헤더 파일\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlBase.h">
+      <Filter>헤더 파일\PropertyCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlCrop.h">
+      <Filter>헤더 파일\PropertyCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlResize.h">
+      <Filter>헤더 파일\PropertyCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlRotate.h">
+      <Filter>헤더 파일\PropertyCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlColorBalance.h">
+      <Filter>헤더 파일\PropertyCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlColorBright.h">
+      <Filter>헤더 파일\PropertyCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlColorHLS.h">
+      <Filter>헤더 파일\PropertyCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlColorHSV.h">
+      <Filter>헤더 파일\PropertyCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlColorLevel.h">
+      <Filter>헤더 파일\PropertyCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlColorReverse.h">
+      <Filter>헤더 파일\PropertyCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlMonochrome.h">
+      <Filter>헤더 파일\PropertyCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\KImageOutputLevelCtrl.h">
+      <Filter>헤더 파일\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Document\KImageProperty.h">
+      <Filter>헤더 파일\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\KColor.h">
+      <Filter>헤더 파일\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlEditImage.h">
+      <Filter>헤더 파일\PropertyCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\KColorPickerCtrl.h">
+      <Filter>헤더 파일\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Document\KShapeContainer.h">
+      <Filter>헤더 파일\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="Document\Shape\KShapeBase.h">
+      <Filter>헤더 파일\Document\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Document\Shape\KShapeEllipse.h">
+      <Filter>헤더 파일\Document\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Document\Shape\KShapeLine.h">
+      <Filter>헤더 파일\Document\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Document\Shape\KShapeRectangle.h">
+      <Filter>헤더 파일\Document\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\KLineComboBox.h">
+      <Filter>헤더 파일\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlAnnotateArrow.h">
+      <Filter>헤더 파일\PropertyCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlAnnotateShape.h">
+      <Filter>헤더 파일\PropertyCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Document\KImageBlockEditor.h">
+      <Filter>헤더 파일\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="Document\KShapeEditor.h">
+      <Filter>헤더 파일\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="Document\KImageDrawer.h">
+      <Filter>헤더 파일\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="Document\KDragAction.h">
+      <Filter>헤더 파일\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="Document\Shape\KShapePolygon.h">
+      <Filter>헤더 파일\Document\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlAnnotateSelect.h">
+      <Filter>헤더 파일\PropertyCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Document\Shape\KShapeTextbox.h">
+      <Filter>헤더 파일\Document\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlAnnotateTextbox.h">
+      <Filter>헤더 파일\PropertyCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Document\Shape\KShapeDef.h">
+      <Filter>헤더 파일\Document\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Document\KEditAction.h">
+      <Filter>헤더 파일\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="Document\KActionList.h">
+      <Filter>헤더 파일\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\DestinyLocalSyncLib\common\ClientDataType.h">
+      <Filter>소스 파일\Core\DestinyIF</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\DestinyLocalSyncLib\common\DestinyLocalSyncIFShared.h">
+      <Filter>소스 파일\Core\DestinyIF</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\Reg.h">
+      <Filter>헤더 파일\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="CDlgSetting.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VivaCommandInfo.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VivaDocTemplate.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\KBgTask.h">
+      <Filter>헤더 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="KDlgLoadProgress.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HttpDownloader\KDownloader.h">
+      <Filter>소스 파일\Core\HttpDownloader</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HttpDownloader\KString.h">
+      <Filter>소스 파일\Core\HttpDownloader</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HttpDownloader\KUrl.h">
+      <Filter>소스 파일\Core\HttpDownloader</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HttpDownloader\KWnetDownloader.h">
+      <Filter>소스 파일\Core\HttpDownloader</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HttpDownloader\stdafx.h">
+      <Filter>소스 파일\Core\HttpDownloader</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HttpDownloader\KWString.h">
+      <Filter>소스 파일\Core\HttpDownloader</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HttpDownloader\KHttpHeader.h">
+      <Filter>소스 파일\Core\HttpDownloader</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HttpDownloader\KFile.h">
+      <Filter>소스 파일\Core\HttpDownloader</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HttpDownloader\KMemory.h">
+      <Filter>소스 파일\Core\HttpDownloader</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HttpDownloader\PlatformLib.h">
+      <Filter>소스 파일\Core\HttpDownloader</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HttpDownloader\KCharset.h">
+      <Filter>소스 파일\Core\HttpDownloader</Filter>
+    </ClInclude>
+    <ClInclude Include="KDlgUploadAs.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="KDlgShowMessage.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="KDlgViewZoom.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\KBgTaskDownload.h">
+      <Filter>헤더 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\KBgTaskEffectRender.h">
+      <Filter>헤더 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\KBgTaskLoader.h">
+      <Filter>헤더 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\KBgTaskLocalScan.h">
+      <Filter>헤더 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\KBgTaskUpload.h">
+      <Filter>헤더 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\KEcmBaseItem.h">
+      <Filter>헤더 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\KEcmFileItem.h">
+      <Filter>헤더 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\KEcmFolderItem.h">
+      <Filter>헤더 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\KSyncCoreBase.h">
+      <Filter>헤더 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\KSyncCoreEngine.h">
+      <Filter>헤더 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\KUpDownLoader.h">
+      <Filter>헤더 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\KFontComboBox.h">
+      <Filter>헤더 파일\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\KImageButton.h">
+      <Filter>헤더 파일\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Document\Shape\mathmatics.h">
+      <Filter>헤더 파일\Document\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\crypting.h">
+      <Filter>헤더 파일\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Document\KShapeProperty.h">
+      <Filter>헤더 파일\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="Document\KImageCacheManager.h">
+      <Filter>헤더 파일\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="Document\Shape\KShapeSmart.h">
+      <Filter>헤더 파일\Document\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="KDlgSetDocType.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\KEcmDocType.h">
+      <Filter>헤더 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyCtrl\KButtonPropItem.h">
+      <Filter>헤더 파일\PropertyCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\KMetadataInfo.h">
+      <Filter>헤더 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\KMemoryStream.h">
+      <Filter>헤더 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CDlgImageFormat.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Document\Shape\CurveTracer.h">
+      <Filter>헤더 파일\Document\Shape</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="VivaImaging.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VivaImagingDoc.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VivaImagingView.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="FileView.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassView.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewTree.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputWnd.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertiesWnd.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="KDlgNewProject.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\KConstant.cpp">
+      <Filter>소스 파일\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\KSettings.cpp">
+      <Filter>소스 파일\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\KThumbListView.cpp">
+      <Filter>소스 파일\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\Graphics.cpp">
+      <Filter>소스 파일\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\KBitmap.cpp">
+      <Filter>소스 파일\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\Platform.cpp">
+      <Filter>소스 파일\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Document\KImagePage.cpp">
+      <Filter>소스 파일\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="KDlgSelectImageSource.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\twain\DSMInterface.cpp">
+      <Filter>소스 파일\Platform\twain</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\twain\TwainApp.cpp">
+      <Filter>소스 파일\Platform\twain</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\twain\KTwainControl.cpp">
+      <Filter>소스 파일\Platform\twain</Filter>
+    </ClCompile>
+    <ClCompile Include="KDlgConfigureSource.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\KConfigureSourceCtrl.cpp">
+      <Filter>소스 파일\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\twain\TwainString.cpp">
+      <Filter>소스 파일\Platform\twain</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\Utils.cpp">
+      <Filter>소스 파일\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\twain\CommonTWAIN.cpp">
+      <Filter>소스 파일\Platform\twain</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\twain\VerifySignature.cpp">
+      <Filter>소스 파일\Platform\twain</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\twain\CTiffWriter.cpp">
+      <Filter>소스 파일\Platform\twain</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\wia\KWiaControl.cpp">
+      <Filter>소스 파일\Platform\wia</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\wia\KWiaTransferCallback.cpp">
+      <Filter>소스 파일\Platform\wia</Filter>
+    </ClCompile>
+    <ClCompile Include="Document\KImageBase.cpp">
+      <Filter>소스 파일\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="Document\KImageFolder.cpp">
+      <Filter>소스 파일\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\KPropertyGridProperty.cpp">
+      <Filter>소스 파일\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlBase.cpp">
+      <Filter>소스 파일\PropertyCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlRotate.cpp">
+      <Filter>소스 파일\PropertyCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlCrop.cpp">
+      <Filter>소스 파일\PropertyCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlResize.cpp">
+      <Filter>소스 파일\PropertyCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlColorBalance.cpp">
+      <Filter>소스 파일\PropertyCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlColorBright.cpp">
+      <Filter>소스 파일\PropertyCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlColorHLS.cpp">
+      <Filter>소스 파일\PropertyCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlColorHSV.cpp">
+      <Filter>소스 파일\PropertyCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlColorLevel.cpp">
+      <Filter>소스 파일\PropertyCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlColorReverse.cpp">
+      <Filter>소스 파일\PropertyCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlMonochrome.cpp">
+      <Filter>소스 파일\PropertyCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\KImageOutputLevelCtrl.cpp">
+      <Filter>소스 파일\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\KColor.cpp">
+      <Filter>소스 파일\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlEditImage.cpp">
+      <Filter>소스 파일\PropertyCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\KColorPickerCtrl.cpp">
+      <Filter>소스 파일\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlAnnotateArrow.cpp">
+      <Filter>소스 파일\PropertyCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlAnnotateShape.cpp">
+      <Filter>소스 파일\PropertyCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlAnnotateTextbox.cpp">
+      <Filter>소스 파일\PropertyCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\KLineComboBox.cpp">
+      <Filter>소스 파일\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Document\Shape\KShapeBase.cpp">
+      <Filter>소스 파일\Document\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Document\Shape\KShapeEllipse.cpp">
+      <Filter>소스 파일\Document\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Document\Shape\KShapeRectangle.cpp">
+      <Filter>소스 파일\Document\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Document\Shape\KShapeLine.cpp">
+      <Filter>소스 파일\Document\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Document\KShapeContainer.cpp">
+      <Filter>소스 파일\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="Document\KShapeEditor.cpp">
+      <Filter>소스 파일\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="Document\Shape\KShapePolygon.cpp">
+      <Filter>소스 파일\Document\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Document\Shape\KShapeTextbox.cpp">
+      <Filter>소스 파일\Document\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Document\KImageDrawer.cpp">
+      <Filter>소스 파일\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="Document\KImageBlockEditor.cpp">
+      <Filter>소스 파일\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="Document\KDragAction.cpp">
+      <Filter>소스 파일\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlAnnotateSelect.cpp">
+      <Filter>소스 파일\PropertyCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Document\Shape\mathmatics.cpp">
+      <Filter>소스 파일\Document\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\KImageButton.cpp">
+      <Filter>소스 파일\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\KFontComboBox.cpp">
+      <Filter>소스 파일\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Document\KEditAction.cpp">
+      <Filter>소스 파일\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="Document\KActionList.cpp">
+      <Filter>소스 파일\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="Document\KImageCacheManager.cpp">
+      <Filter>소스 파일\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="Document\KImageProperty.cpp">
+      <Filter>소스 파일\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\KSyncCoreBase.cpp">
+      <Filter>소스 파일\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\KSyncCoreEngine.cpp">
+      <Filter>소스 파일\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\KUpDownLoader.cpp">
+      <Filter>소스 파일\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\Reg.cpp">
+      <Filter>소스 파일\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="CDlgSetting.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VivaDocTemplate.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VivaCommandInfo.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\KBgTask.cpp">
+      <Filter>소스 파일\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\KBgTaskLocalScan.cpp">
+      <Filter>소스 파일\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\KBgTaskDownload.cpp">
+      <Filter>소스 파일\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\KBgTaskUpload.cpp">
+      <Filter>소스 파일\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="KDlgLoadProgress.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HttpDownloader\KDownloader.cpp">
+      <Filter>소스 파일\Core\HttpDownloader</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HttpDownloader\KString.cpp">
+      <Filter>소스 파일\Core\HttpDownloader</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HttpDownloader\KUrl.cpp">
+      <Filter>소스 파일\Core\HttpDownloader</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HttpDownloader\KWnetDownloader.cpp">
+      <Filter>소스 파일\Core\HttpDownloader</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HttpDownloader\KWString.cpp">
+      <Filter>소스 파일\Core\HttpDownloader</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HttpDownloader\KHttpHeader.cpp">
+      <Filter>소스 파일\Core\HttpDownloader</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HttpDownloader\KFile.cpp">
+      <Filter>소스 파일\Core\HttpDownloader</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HttpDownloader\KMemory.cpp">
+      <Filter>소스 파일\Core\HttpDownloader</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HttpDownloader\PlatformLib.cpp">
+      <Filter>소스 파일\Core\HttpDownloader</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HttpDownloader\KCharset.cpp">
+      <Filter>소스 파일\Core\HttpDownloader</Filter>
+    </ClCompile>
+    <ClCompile Include="KDlgUploadAs.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="KDlgShowMessage.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\KEcmBaseItem.cpp">
+      <Filter>소스 파일\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\KBgTaskLoader.cpp">
+      <Filter>소스 파일\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\KBgTaskEffectRender.cpp">
+      <Filter>소스 파일\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\crypting.cpp">
+      <Filter>소스 파일\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="KDlgViewZoom.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\KEcmFileItem.cpp">
+      <Filter>소스 파일\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\KEcmFolderItem.cpp">
+      <Filter>소스 파일\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Document\KShapeProperty.cpp">
+      <Filter>소스 파일\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="Document\Shape\KShapeSmart.cpp">
+      <Filter>소스 파일\Document\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="KDlgSetDocType.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\KEcmDocType.cpp">
+      <Filter>소스 파일\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyCtrl\KButtonPropItem.cpp">
+      <Filter>소스 파일\PropertyCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\KMetadataInfo.cpp">
+      <Filter>소스 파일\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\KMemoryStream.cpp">
+      <Filter>소스 파일\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="CDlgImageFormat.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Document\Shape\CurveTracer.cpp">
+      <Filter>소스 파일\Document\Shape</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VivaImaging.reg" />
+    <None Include="res\ribbon.mfcribbon-ms">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\VivaImaging.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\mfcribbon-ms00001.mfcribbon-ms">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VivaImaging.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\file_view.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\file_view_hc.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\class_view.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\class_view_hc.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\fileview.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\fileview_hc.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\classview.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\classview_hc.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\explorer.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\explorer_hc.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\sort.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\sort_hc.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\menuimages.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\menuimages_hc.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\output_wnd.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\output_wnd_hc.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\properties_wnd.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\properties_wnd_hc.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\properties.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\properties_hc.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\buttons.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\filelarge.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\filesmall.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\main.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\writelarge.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\writesmall.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\VivaImagingDoc.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\VivaImaging.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Toolbar256.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\image-ribbon-icon.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\image-lg.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\imagelarge.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\image-large.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\image-small.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\align%4016.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\align%4024.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\align%4032.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\align%4048.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\font-kr%4024.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\font-kr%4032.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\font-kr%4048.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\folder-icon%4032.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\folder-icon%4048.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\folder-icon%4064.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\folding-focus%4016.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\folding-focus%4024.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\folding-focus%4032.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\folding-norm%4016.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\folding-norm%4024.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\folding-norm%4032.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\shape1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Shape2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Shape3.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Shape4.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Shape5.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Shape6.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Shape7.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\file-xlarge.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\image-xlarge.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\image-xsmall.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\file-xsmall.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\file-large.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\file-small.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\main-x.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Todo.txt" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,7 @@
+#ifndef _DESTINY_PLATFORM_SERVICE_CONTROL_MODULE_H_
+#define _DESTINY_PLATFORM_SERVICE_CONTROL_MODULE_H_
+
+void SendKSyncServiceControl(int code);
+
+
+#endif

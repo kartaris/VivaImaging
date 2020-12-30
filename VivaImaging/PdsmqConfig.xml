@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PdsmqConfig version="4.0">
+  <ProjectId>55C1183D3051337A098C84DE</ProjectId>
+  <AuthenticationToken>8y6DQW3Ld3vPkJps6C4Vb7jNlcgYJM8kWgz3wCU3BHsVwi</AuthenticationToken>
+  <AppDeployedId>Karnak_LJM129-M134_UWWL_4-1/24.0</AppDeployedId>
+  <PDSServerUri>https://mq.dataservices.hp.com</PDSServerUri>
+  <EventQueue>app_eventinfo</EventQueue>
+</PdsmqConfig>

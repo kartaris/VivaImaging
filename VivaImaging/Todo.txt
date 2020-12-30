@@ -1,0 +1,131 @@
+. property window
+  - image information
+  - file & folder name edit
+2. image edit
+  - folder folding
+  - move pages on thumb list
+3. image editing
+  - property window control
+  - rotate
+  - crop
+  - resize
+  - image effect
+  - block image edit(ColorPicker, select rectangle/ellipse area, fill area)
+  - block image copy/paste
+
+4. image annotation
+  - line/freehand/rectangle/ellipse shape
+  - selection
+  - resize/move/delete
+  - align/order
+  - keyboard action(move/delete)
+  - soften/curve-to freehand/polygon
+  - selection mode : property shows fill & line style and can apply to selected objects.
+  - popup menu(select/copy/cut/paste/delete/move/align/order/property)
+  - after shape create, auto change to select mode
+  - default fill & outline
+  - font property get/set
+  - text edit
+
+5. file load/save
+  - shape load/save
+  - image load/save
+  - project file load/save
+
+6. copy/paste
+  - file/BMP paste as new imag page.
+  - copy/paste on thumbnail - copy/paste shapes
+  - copy/paste on block image
+
+7. editing & update
+  - update thumb image to include annotates
+  - doc modified
+
+8. settings
+  - environment
+
+9. project folder/file manage
+  - new project(document)
+  - copy to working folder
+  - store file when updated.
+  - cache control(doc has limit for image cache)
+
+a. edit UI
+  - crop mouse-drag UI
+
+b. undo/redo
+  - action vector
+  - undo
+  - redo
+
+c. work folder
+   - working folder
+   - save to temp folder
+   - save project(save server folder location)
+   - save to tiff
+
+d. command line option
+e. printing
+f. undo-buffer, cache-buffer limit
+g. auto naming
+h. language translate(ribbon 등은 수동 언어선택 불가)
+i. undo action popup menu
+j. view mode/edit mode change
+k. drag auto scroll on thumbnail view.
+l. start with folder
+    - local folder & file
+	- server folder & file ( -openserverfolder:1MQ2u64-N8H)
+	- show errors when load done
+m. integrate with Destiny uploading & downloading
+    - upload
+	- upload status window
+	- dowlonad folder
+o. image effect render by background thread
+  (이미지 효과 적용하고 프리뷰 업데이트할 때 백그라운드 쓰레드로)
+
+p. unfinished previous upload job
+q. save option
+	- save filetype
+	- local working folder & filename
+	- server upload folder
+	- remove existing files
+    - upload option
+       -upload_as_newversion_ifexist
+       - clear folder before upload
+r. additional undo/redo
+    - renaming
+
+s. keyboard command(arrow, tab)
+s. Encrypt/Decrypt image file
+s. shell Openwith file extension register
+
+s. zoom dialog
+
+x. empty folder does not saved(첫째 이미지에 전체 폴더 목록을 저장함, 폴더만 존재하는 경우 저장 오류 표시)
+x. file/folder 권한에 따라 편집 기능 enable.
+
+x. save image to temp file to do not change origin.(KImagePage::m_TempFilename에 임시 파일명)
+    -multi-tif에서 캐시 페이지만 리로드하는 케이스
+
+x. add more shapes
+s. group mode resizing
+x. support pen drawing
+
+12/17
+* Metadata on TIFF
+   - 커스텀 타입 메타데이터는 하나로 합쳐서 UserComment tag에 저장.
+
+   
+*연구소 협조사항(0221)
+  - IF dll Multiple instance, LocalSync와 같이 실행 안됨(동일한 이름의 Mutex 사용중)
+  - LocalSync_CreateFolder에서 동일한 이름의 폴더가 존재하는 경우에는 존재하는 폴더의 OID, FolderFullPathIndex를 리턴하여 주도록 
+  - 이미지의 메타 데이터 업로드/다운로드 API
+  - 폴더 단위 업로드/다운로드 기능 검토(업로드시 기존 파일 삭제 및 덮어쓰기 여부)
+  - ECM 클라이언트(web, 탐색기) 연동. (ext dll ?), 정책값 연동 방법
+  - File Encrypt/Decrypt API from Agent
+
+*ECM 확장속성 사용에 따른 검토
+  - 새 프로젝트 생성시에 대상 폴더/확장속성을 먼저 지정하여야 메타데이터 편집 가능
+  - SaveAs를 통한 다른 폴더로 저장시 확장속성 접근이 안되는 경우
+  - predefined-metadata 자동 생성의 제한(created-date, scan-device, computer-info, user-info, image-info 등)
+  - 페이지별로 다른 문서속성타입 적용 또는 동일 문서 속성 적용.

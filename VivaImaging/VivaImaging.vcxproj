@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{2FF8276F-23B8-41C0-8590-9B9D752B7105}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+    <RootNamespace>VivaImaging</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>DestinyImaging</TargetName>
+    <OutDir>$(ProjectDir)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>DestinyImaging</TargetName>
+    <OutDir>$(ProjectDir)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;USE_IMAGING;MAIN_EXEC_MODULE;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>WiaGuid.lib;XmlLite.lib;Propsys.lib;Core/DestinyLocalSyncLib/lib/DestinyLocalSyncIF.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;USE_IMAGING;MAIN_EXEC_MODULE;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>WiaGuid.lib;XmlLite.lib;Propsys.lib;Core/DestinyLocalSyncLib/lib/DestinyLocalSyncIF64.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;USE_IMAGING;MAIN_EXEC_MODULE;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>WiaGuid.lib;XmlLite.lib;Propsys.lib;Core/DestinyLocalSyncLib/lib/DestinyLocalSyncIF.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;USE_IMAGING;MAIN_EXEC_MODULE;USE_IMAGING;MAIN_EXEC_MODULE;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>WiaGuid.lib;XmlLite.lib;Propsys.lib;Core/DestinyLocalSyncLib/lib/DestinyLocalSyncIF64.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="CDlgImageFormat.h" />
+    <ClInclude Include="CDlgSetting.h" />
+    <ClInclude Include="ClassView.h" />
+    <ClInclude Include="Control\KColorPickerCtrl.h" />
+    <ClInclude Include="Control\KConfigureSourceCtrl.h" />
+    <ClInclude Include="Control\KFontComboBox.h" />
+    <ClInclude Include="Control\KImageButton.h" />
+    <ClInclude Include="Control\KImageOutputLevelCtrl.h" />
+    <ClInclude Include="Control\KLineComboBox.h" />
+    <ClInclude Include="Control\KPropertyGridProperty.h" />
+    <ClInclude Include="Control\KThumbListView.h" />
+    <ClInclude Include="Control\stdafx.h" />
+    <ClInclude Include="Core\DestinyLocalSyncLib\common\ClientDataType.h" />
+    <ClInclude Include="Core\DestinyLocalSyncLib\common\DestinyLocalSyncIFShared.h" />
+    <ClInclude Include="Core\HttpDownloader\KCharset.h" />
+    <ClInclude Include="Core\HttpDownloader\KDownloader.h" />
+    <ClInclude Include="Core\HttpDownloader\KFile.h" />
+    <ClInclude Include="Core\HttpDownloader\KHttpHeader.h" />
+    <ClInclude Include="Core\HttpDownloader\KMemory.h" />
+    <ClInclude Include="Core\HttpDownloader\KString.h" />
+    <ClInclude Include="Core\HttpDownloader\KUrl.h" />
+    <ClInclude Include="Core\HttpDownloader\KWnetDownloader.h" />
+    <ClInclude Include="Core\HttpDownloader\KWString.h" />
+    <ClInclude Include="Core\HttpDownloader\PlatformLib.h" />
+    <ClInclude Include="Core\HttpDownloader\stdafx.h" />
+    <ClInclude Include="Core\KBgTask.h" />
+    <ClInclude Include="Core\KBgTaskDownload.h" />
+    <ClInclude Include="Core\KBgTaskEffectRender.h" />
+    <ClInclude Include="Core\KBgTaskLoader.h" />
+    <ClInclude Include="Core\KBgTaskLocalScan.h" />
+    <ClInclude Include="Core\KBgTaskUpload.h" />
+    <ClInclude Include="Core\KConstant.h" />
+    <ClInclude Include="Core\KEcmBaseItem.h" />
+    <ClInclude Include="Core\KEcmDocType.h" />
+    <ClInclude Include="Core\KEcmFileItem.h" />
+    <ClInclude Include="Core\KEcmFolderItem.h" />
+    <ClInclude Include="Core\KMemoryStream.h" />
+    <ClInclude Include="Core\KMetadataInfo.h" />
+    <ClInclude Include="Core\KSettings.h" />
+    <ClInclude Include="Core\KSyncCoreBase.h" />
+    <ClInclude Include="Core\KSyncCoreEngine.h" />
+    <ClInclude Include="Core\KUpDownLoader.h" />
+    <ClInclude Include="Core\stdafx.h" />
+    <ClInclude Include="Document\KActionList.h" />
+    <ClInclude Include="Document\KDragAction.h" />
+    <ClInclude Include="Document\KEditAction.h" />
+    <ClInclude Include="Document\KImageBlockEditor.h" />
+    <ClInclude Include="Document\KImageCacheManager.h" />
+    <ClInclude Include="Document\KImageDrawer.h" />
+    <ClInclude Include="Document\KShapeContainer.h" />
+    <ClInclude Include="Document\KImageBase.h" />
+    <ClInclude Include="Document\KImageFolder.h" />
+    <ClInclude Include="Document\KImagePage.h" />
+    <ClInclude Include="Document\KImageProperty.h" />
+    <ClInclude Include="Document\KShapeEditor.h" />
+    <ClInclude Include="Document\KShapeProperty.h" />
+    <ClInclude Include="Document\Shape\CurveTracer.h" />
+    <ClInclude Include="Document\Shape\KShapeBase.h" />
+    <ClInclude Include="Document\Shape\KShapeDef.h" />
+    <ClInclude Include="Document\Shape\KShapeEllipse.h" />
+    <ClInclude Include="Document\Shape\KShapeLine.h" />
+    <ClInclude Include="Document\Shape\KShapePolygon.h" />
+    <ClInclude Include="Document\Shape\KShapeRectangle.h" />
+    <ClInclude Include="Document\Shape\KShapeSmart.h" />
+    <ClInclude Include="Document\Shape\KShapeTextbox.h" />
+    <ClInclude Include="Document\Shape\mathmatics.h" />
+    <ClInclude Include="Document\stdafx.h" />
+    <ClInclude Include="FileView.h" />
+    <ClInclude Include="KDlgConfigureSource.h" />
+    <ClInclude Include="KDlgLoadProgress.h" />
+    <ClInclude Include="KDlgNewProject.h" />
+    <ClInclude Include="KDlgSelectImageSource.h" />
+    <ClInclude Include="KDlgSetDocType.h" />
+    <ClInclude Include="KDlgShowMessage.h" />
+    <ClInclude Include="KDlgUploadAs.h" />
+    <ClInclude Include="KDlgViewZoom.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="OutputWnd.h" />
+    <ClInclude Include="Platform\crypting.h" />
+    <ClInclude Include="Platform\Graphics.h" />
+    <ClInclude Include="Platform\KBitmap.h" />
+    <ClInclude Include="Platform\KColor.h" />
+    <ClInclude Include="Platform\Platform.h" />
+    <ClInclude Include="Platform\Reg.h" />
+    <ClInclude Include="Platform\stdafx.h" />
+    <ClInclude Include="Platform\twain\CommonTWAIN.h" />
+    <ClInclude Include="Platform\twain\CTiffWriter.h" />
+    <ClInclude Include="Platform\twain\DSMInterface.h" />
+    <ClInclude Include="Platform\twain\KTwainControl.h" />
+    <ClInclude Include="Platform\twain\stdafx.h" />
+    <ClInclude Include="Platform\twain\twain.h" />
+    <ClInclude Include="Platform\twain\TwainApp.h" />
+    <ClInclude Include="Platform\twain\TwainString.h" />
+    <ClInclude Include="Platform\Utils.h" />
+    <ClInclude Include="Platform\wia\KWiaControl.h" />
+    <ClInclude Include="Platform\wia\KWiaTransferCallback.h" />
+    <ClInclude Include="Platform\wia\stdafx.h" />
+    <ClInclude Include="PropertiesWnd.h" />
+    <ClInclude Include="PropertyCtrl\KButtonPropItem.h" />
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlAnnotateArrow.h" />
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlAnnotateSelect.h" />
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlAnnotateShape.h" />
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlAnnotateTextbox.h" />
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlBase.h" />
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlColorBalance.h" />
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlColorBright.h" />
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlColorHLS.h" />
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlColorHSV.h" />
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlColorLevel.h" />
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlColorReverse.h" />
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlCrop.h" />
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlEditImage.h" />
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlMonochrome.h" />
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlResize.h" />
+    <ClInclude Include="PropertyCtrl\KPropertyCtrlRotate.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="ViewTree.h" />
+    <ClInclude Include="VivaCommandInfo.h" />
+    <ClInclude Include="VivaDocTemplate.h" />
+    <ClInclude Include="VivaImaging.h" />
+    <ClInclude Include="VivaImagingDoc.h" />
+    <ClInclude Include="VivaImagingView.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CDlgImageFormat.cpp" />
+    <ClCompile Include="CDlgSetting.cpp" />
+    <ClCompile Include="ClassView.cpp" />
+    <ClCompile Include="Control\KColorPickerCtrl.cpp" />
+    <ClCompile Include="Control\KConfigureSourceCtrl.cpp" />
+    <ClCompile Include="Control\KFontComboBox.cpp" />
+    <ClCompile Include="Control\KImageButton.cpp" />
+    <ClCompile Include="Control\KImageOutputLevelCtrl.cpp" />
+    <ClCompile Include="Control\KLineComboBox.cpp" />
+    <ClCompile Include="Control\KPropertyGridProperty.cpp" />
+    <ClCompile Include="Control\KThumbListView.cpp" />
+    <ClCompile Include="Core\HttpDownloader\KCharset.cpp" />
+    <ClCompile Include="Core\HttpDownloader\KDownloader.cpp" />
+    <ClCompile Include="Core\HttpDownloader\KFile.cpp" />
+    <ClCompile Include="Core\HttpDownloader\KHttpHeader.cpp" />
+    <ClCompile Include="Core\HttpDownloader\KMemory.cpp" />
+    <ClCompile Include="Core\HttpDownloader\KString.cpp" />
+    <ClCompile Include="Core\HttpDownloader\KUrl.cpp" />
+    <ClCompile Include="Core\HttpDownloader\KWnetDownloader.cpp" />
+    <ClCompile Include="Core\HttpDownloader\KWString.cpp" />
+    <ClCompile Include="Core\HttpDownloader\PlatformLib.cpp" />
+    <ClCompile Include="Core\KBgTask.cpp" />
+    <ClCompile Include="Core\KBgTaskDownload.cpp" />
+    <ClCompile Include="Core\KBgTaskEffectRender.cpp" />
+    <ClCompile Include="Core\KBgTaskLoader.cpp" />
+    <ClCompile Include="Core\KBgTaskLocalScan.cpp" />
+    <ClCompile Include="Core\KBgTaskUpload.cpp" />
+    <ClCompile Include="Core\KConstant.cpp" />
+    <ClCompile Include="Core\KEcmBaseItem.cpp" />
+    <ClCompile Include="Core\KEcmDocType.cpp" />
+    <ClCompile Include="Core\KEcmFileItem.cpp" />
+    <ClCompile Include="Core\KEcmFolderItem.cpp" />
+    <ClCompile Include="Core\KMemoryStream.cpp" />
+    <ClCompile Include="Core\KMetadataInfo.cpp" />
+    <ClCompile Include="Core\KSettings.cpp" />
+    <ClCompile Include="Core\KSyncCoreBase.cpp" />
+    <ClCompile Include="Core\KSyncCoreEngine.cpp" />
+    <ClCompile Include="Core\KUpDownLoader.cpp" />
+    <ClCompile Include="Document\KActionList.cpp" />
+    <ClCompile Include="Document\KDragAction.cpp" />
+    <ClCompile Include="Document\KEditAction.cpp" />
+    <ClCompile Include="Document\KImageBlockEditor.cpp" />
+    <ClCompile Include="Document\KImageCacheManager.cpp" />
+    <ClCompile Include="Document\KImageDrawer.cpp" />
+    <ClCompile Include="Document\KImageProperty.cpp" />
+    <ClCompile Include="Document\KShapeContainer.cpp" />
+    <ClCompile Include="Document\KImageBase.cpp" />
+    <ClCompile Include="Document\KImageFolder.cpp" />
+    <ClCompile Include="Document\KImagePage.cpp" />
+    <ClCompile Include="Document\KShapeEditor.cpp" />
+    <ClCompile Include="Document\KShapeProperty.cpp" />
+    <ClCompile Include="Document\Shape\CurveTracer.cpp" />
+    <ClCompile Include="Document\Shape\KShapeBase.cpp" />
+    <ClCompile Include="Document\Shape\KShapeEllipse.cpp" />
+    <ClCompile Include="Document\Shape\KShapeLine.cpp" />
+    <ClCompile Include="Document\Shape\KShapePolygon.cpp" />
+    <ClCompile Include="Document\Shape\KShapeRectangle.cpp" />
+    <ClCompile Include="Document\Shape\KShapeSmart.cpp" />
+    <ClCompile Include="Document\Shape\KShapeTextbox.cpp" />
+    <ClCompile Include="Document\Shape\mathmatics.cpp" />
+    <ClCompile Include="FileView.cpp" />
+    <ClCompile Include="KDlgConfigureSource.cpp" />
+    <ClCompile Include="KDlgLoadProgress.cpp" />
+    <ClCompile Include="KDlgNewProject.cpp" />
+    <ClCompile Include="KDlgSelectImageSource.cpp" />
+    <ClCompile Include="KDlgSetDocType.cpp" />
+    <ClCompile Include="KDlgShowMessage.cpp" />
+    <ClCompile Include="KDlgUploadAs.cpp" />
+    <ClCompile Include="KDlgViewZoom.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="OutputWnd.cpp" />
+    <ClCompile Include="Platform\crypting.cpp" />
+    <ClCompile Include="Platform\Graphics.cpp" />
+    <ClCompile Include="Platform\KBitmap.cpp" />
+    <ClCompile Include="Platform\KColor.cpp" />
+    <ClCompile Include="Platform\Platform.cpp" />
+    <ClCompile Include="Platform\Reg.cpp" />
+    <ClCompile Include="Platform\twain\CommonTWAIN.cpp" />
+    <ClCompile Include="Platform\twain\CTiffWriter.cpp" />
+    <ClCompile Include="Platform\twain\DSMInterface.cpp" />
+    <ClCompile Include="Platform\twain\KTwainControl.cpp" />
+    <ClCompile Include="Platform\twain\TwainApp.cpp" />
+    <ClCompile Include="Platform\twain\TwainString.cpp" />
+    <ClCompile Include="Platform\twain\VerifySignature.cpp" />
+    <ClCompile Include="Platform\Utils.cpp" />
+    <ClCompile Include="Platform\wia\KWiaControl.cpp" />
+    <ClCompile Include="Platform\wia\KWiaTransferCallback.cpp" />
+    <ClCompile Include="PropertiesWnd.cpp" />
+    <ClCompile Include="PropertyCtrl\KButtonPropItem.cpp" />
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlAnnotateArrow.cpp" />
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlAnnotateSelect.cpp" />
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlAnnotateShape.cpp" />
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlAnnotateTextbox.cpp" />
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlBase.cpp" />
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlColorBalance.cpp" />
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlColorBright.cpp" />
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlColorHLS.cpp" />
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlColorHSV.cpp" />
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlColorLevel.cpp" />
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlColorReverse.cpp" />
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlCrop.cpp" />
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlEditImage.cpp" />
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlMonochrome.cpp" />
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlResize.cpp" />
+    <ClCompile Include="PropertyCtrl\KPropertyCtrlRotate.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ViewTree.cpp" />
+    <ClCompile Include="VivaCommandInfo.cpp" />
+    <ClCompile Include="VivaDocTemplate.cpp" />
+    <ClCompile Include="VivaImaging.cpp" />
+    <ClCompile Include="VivaImagingDoc.cpp" />
+    <ClCompile Include="VivaImagingView.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\mfcribbon-ms00001.mfcribbon-ms" />
+    <None Include="res\ribbon.mfcribbon-ms" />
+    <None Include="res\VivaImaging.rc2" />
+    <None Include="VivaImaging.reg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VivaImaging.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\align%4016.png" />
+    <Image Include="res\align%4024.png" />
+    <Image Include="res\align%4032.png" />
+    <Image Include="res\align%4048.png" />
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\buttons.bmp" />
+    <Image Include="res\classview.bmp" />
+    <Image Include="res\classview_hc.bmp" />
+    <Image Include="res\class_view.ico" />
+    <Image Include="res\class_view_hc.ico" />
+    <Image Include="res\explorer.bmp" />
+    <Image Include="res\explorer_hc.bmp" />
+    <Image Include="res\file-large.bmp" />
+    <Image Include="res\file-small.bmp" />
+    <Image Include="res\file-xlarge.bmp" />
+    <Image Include="res\file-xsmall.bmp" />
+    <Image Include="res\filelarge.bmp" />
+    <Image Include="res\filesmall.bmp" />
+    <Image Include="res\fileview.bmp" />
+    <Image Include="res\fileview_hc.bmp" />
+    <Image Include="res\file_view.ico" />
+    <Image Include="res\file_view_hc.ico" />
+    <Image Include="res\folder-icon%4032.png" />
+    <Image Include="res\folder-icon%4048.png" />
+    <Image Include="res\folder-icon%4064.png" />
+    <Image Include="res\folding-focus%4016.png" />
+    <Image Include="res\folding-focus%4024.png" />
+    <Image Include="res\folding-focus%4032.png" />
+    <Image Include="res\folding-norm%4016.png" />
+    <Image Include="res\folding-norm%4024.png" />
+    <Image Include="res\folding-norm%4032.png" />
+    <Image Include="res\font-kr%4024.png" />
+    <Image Include="res\font-kr%4032.png" />
+    <Image Include="res\font-kr%4048.png" />
+    <Image Include="res\image-large.bmp" />
+    <Image Include="res\image-lg.bmp" />
+    <Image Include="res\image-ribbon-icon.bmp" />
+    <Image Include="res\image-small.bmp" />
+    <Image Include="res\image-xlarge.bmp" />
+    <Image Include="res\image-xsmall.bmp" />
+    <Image Include="res\imagelarge.bmp" />
+    <Image Include="res\main-x.bmp" />
+    <Image Include="res\main.bmp" />
+    <Image Include="res\menuimages.bmp" />
+    <Image Include="res\menuimages_hc.bmp" />
+    <Image Include="res\output_wnd.ico" />
+    <Image Include="res\output_wnd_hc.ico" />
+    <Image Include="res\properties.bmp" />
+    <Image Include="res\properties_hc.bmp" />
+    <Image Include="res\properties_wnd.ico" />
+    <Image Include="res\properties_wnd_hc.ico" />
+    <Image Include="res\shape1.bmp" />
+    <Image Include="res\Shape2.bmp" />
+    <Image Include="res\Shape3.bmp" />
+    <Image Include="res\Shape4.bmp" />
+    <Image Include="res\Shape5.bmp" />
+    <Image Include="res\Shape6.bmp" />
+    <Image Include="res\Shape7.bmp" />
+    <Image Include="res\sort.bmp" />
+    <Image Include="res\sort_hc.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\Toolbar256.bmp" />
+    <Image Include="res\VivaImaging.ico" />
+    <Image Include="res\VivaImagingDoc.ico" />
+    <Image Include="res\writelarge.bmp" />
+    <Image Include="res\writesmall.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Todo.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
