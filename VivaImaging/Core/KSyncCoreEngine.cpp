@@ -1420,9 +1420,31 @@ BOOL KSyncCoreEngine::SaveUpdateExtAttribute(LPCWSTR pathName, KEcmDocTypeInfo& 
 {
   if ((pathName[1] == ':') && (pathName[0] == mEcmDrive))
   {
+    ERROR_ST err;
+    WCHAR oid[MAX_STGOID];
+    LocalSync_InitEnv(&err);
 
-    CreateDocumentWithExtAttr(FALSE, ERROR_ST * err, LPCWSTR szFolderOID, LPCWSTR szFileName, LONGLONG fileSize, LPCWSTR serverFileOID, LPCWSTR szStorageFileID,
-      LONGLONG localLastModifiedAt, LONGLONG localCreatedAt, LPCWSTR folderIndex, KEcmDocTypeInfo * pInfo, KMetadataInfo * pMetadata, OUT XSYNCDOCUMENT_ST * *ppXDoc);
+    if (LocalSync_GetObjectOIDByLocalFullPathName(&err, pathName, oid))
+    {
+      LocalSync_CleanEnv(&err);
+
+      XSYNCDOCUMENT_ST* ppXDoc = NULL;
+      if (LocalSync_GetDocument(&err, oid, &ppXDoc))
+      {
+        LONGLONG fileSize = 0;//ppXDoc->fileSize
+
+        BOOL r = CreateDocumentWithExtAttr(FALSE, &err, ppXDoc->folderOID, ppXDoc->name, fileSize, ppXDoc->fileOID, ppXDoc->storageFileID,
+            LONGLONG localLastModifiedAt, LONGLONG localCreatedAt, ppXDoc->folderFullPath, KEcmDocTypeInfo * pInfo, KMetadataInfo * pMetadata, OUT XSYNCDOCUMENT_ST * *ppXDoc);
+
+      }
+    }
+    else
+    {
+      TCHAR msg[512];
+      StringCchPrintf(msg, 512, _T("Failure on LocalSync_GetObjectOIDByLocalFullPathName code=%d, err=%s, path=%s"), err.fault_code, err.fault_string, pathName);
+      StoreLogHistory(_T(__FUNCTION__), msg, SYNC_MSG_LOG | SYNC_EVENT_ERROR);
+    }
+    LocalSync_CleanEnv(&err);
   }
   return FALSE;
 }
